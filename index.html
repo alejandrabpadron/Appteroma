@@ -1,20 +1,30 @@
 <!DOCTYPE html>
 <html lang="en" >
 <head>
-  <meta charset="UTF-8">
-  <title>Appteroma</title> 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-    <link rel="stylesheet" href="css/style.css">  
+	<meta charset="UTF-8">
+	<title>Appteroma</title> 
+	<link rel="icon" type="image/png" href="img/icon.png"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+	<link rel="stylesheet" href="css/style.css">  
 </head>
+<style type="text/css">
+	#div-form{
+		margin-left: 5px;
+	}
+	.formulario{
+		border-radius: 8px;
+		height: 30px;
+	}
+</style>
 <body>
 	<header class="nav-top">
 		<img src="img/logo.png" width="150" align="left">
-		<span class="hamburger material-icons" id="ham">menu</span>
+		<span class="hamburger" id="ham"><img src="img/menu.png" width="30"></span>
 	</header>
 	<nav class="nav-drill">
 	  <ul class="nav-items nav-level-1">
 	    <li class="nav-item nav-expand">
-				<a class="nav-link nav-expand-link" href="#">
+				<a class="nav-link" href="#">
 					Acerca de Aterosclerosis
 				</a>
 				<ul class="nav-items nav-expand-content">
@@ -24,7 +34,7 @@
 						</a>
 					</li>
 					<li class="nav-item nav-expand">
-						<a class="nav-link nav-expand-link" href="#">
+						<a class="nav-link" href="#">
 							Menu
 						</a>
 						<ul class="nav-items nav-expand-content">
@@ -160,7 +170,158 @@
 	</nav>
 	<br>
 	<br>
-	<h1>Prueba</h1>
+	<div id="div-form">
+		<p>
+			<img src="img/edad.png" width="20">
+			Edad
+		</p>
+		<input type="text" class="formulario" name="edad" placeholder="  Entre los 20 y 85 años">
+		<br>
+		<hr width="99%">
+		<p>
+			<img src="img/sexo.png" width="20">
+			Sexo
+		</p>
+		<input type="radio" name="sexo" checked value="1">Masculino<br/>
+		<input type="radio" name="sexo" value="2">Femenino<br/>
+		<hr width="99%">
+		<p>
+			<img src="img/talla.png" width="20">
+			Talla
+		</p>
+		<input type="text" class="formulario" name="talla" placeholder=" En centímetros">
+		<hr width="99%">
+		<p>
+			<img src="img/peso.png" width="20">
+			Peso
+		</p>
+		<input type="text" class="formulario" name="peso" placeholder=" En kilogramos">
+		<hr width="99%">
+		<p>
+			<img src="img/raza.png" width="20">
+			Raza
+		</p>
+		<input type="radio" name="raza" checked value="1">Blanca<br/>
+		<input type="radio" name="raza" value="2">Africana<br/>
+		<input type="radio" name="raza" value="2">Mestiza<br/>
+		<input type="radio" name="raza" value="2">Otra<br/>
+		<hr width="99%">
+		<p>
+			<img src="img/presion.png" width="20">
+			Presión Sanguínea
+		</p>
+		<input type="text" class="formulario" name="sistolica" placeholder=" Sistólica 90-200">
+		<input type="text" class="formulario" name="diastolica" placeholder=" Diastólica 60-130">
+		<hr width="99%">
+		<p>
+			<img src="img/col.png" width="20">
+			Perfil Lipídico
+		</p>
+		<input type="text" class="formulario" name="hdl" placeholder=" HDL-Colesterol">
+		<input type="text" class="formulario" name="ldl" placeholder=" LDL-Colesterol">
+		<input type="text" class="formulario" name="total" placeholder=" Colesterol total">	
+		<input type="text" class="formulario" name="trigliceridos" placeholder=" Triglicéridos">
+		<hr width="99%">
+		<p>
+			<img src="img/diabetes.png" width="20">
+			Diabetes
+		</p>
+		<input type="radio" name="diabetes" checked value="1">Sí<br/>
+		<input type="radio" name="diabetes" value="2">No<br/>
+		<hr width="99%">
+		<p>
+			<img src="img/diabetes.png" width="20">
+			Antecedentes de Diabetes
+		</p>
+		<input type="radio" name="diabetes" checked value="1">Sí<br/>
+		<input type="radio" name="diabetes" value="2">No<br/>
+		<hr width="99%">
+		<p>
+			<img src="img/corazon.png" width="20">
+			Antecedentes de Enfermedades Cardiovasculares
+		</p>
+		<input type="radio" name="cardio" checked value="1">Sí<br/>
+		<input type="radio" name="cardio" value="2">No<br/>
+		<hr width="99%">
+		<p>
+			<img src="img/fumador.png" width="20">
+			¿Fuma?
+		</p>
+		<input type="radio" name="fuma" checked value="1">Diariamente<br/>
+		<input type="radio" name="fuma" value="2">Regularmente<br/>
+		<input type="radio" name="fuma" value="2">Nunca<br/>
+		<hr width="99%">
+		<p>
+			<img src="img/defecto.png" width="20">
+			¿En Tratamiento de Hipertensión?
+		</p>
+		<input type="radio" name="hipertension" checked value="1">Sí<br/>
+		<input type="radio" name="hipertension" value="2">No<br/>
+		<hr width="99%">
+		<p>
+			<img src="img/defecto.png" width="20">
+			¿En Estatina?
+		</p>
+		<input type="radio" name="estatina" checked value="1">Sí<br/>
+		<input type="radio" name="estatina" value="2">No<br/>
+		<hr width="99%">
+		<p>
+			<img src="img/defecto.png" width="20">
+			¿En Tratamiento con Aspirinas?
+		</p>
+		<input type="radio" name="aspirinas" checked value="1">Sí<br/>
+		<input type="radio" name="aspirinas" value="2">No<br/>
+		<hr width="99%">
+		<p>
+			<img src="img/comida.png" width="20">
+			¿Consume Comidas Rápidas?
+		</p>
+		<input type="radio" name="comida" checked value="1">Sí<br/>
+		<input type="radio" name="comida" value="2">No<br/>
+		<hr width="99%">
+		<p>
+			<img src="img/comida.png" width="20">
+			¿Con Qué Periodicidad Consume Comidas Rápidas?
+		</p>
+		<input type="radio" name="comida" checked value="1">Diariamente<br/>
+		<input type="radio" name="comida" value="2">Más de dos veces por semana<br/>
+		<input type="radio" name="comida" value="2">Semanalmente<br/>
+		<input type="radio" name="comida" value="2">Mensualmente<br/>
+		<input type="radio" name="comida" value="2">Cada tres meses<br/>
+		<hr width="99%">
+		<p>
+			<img src="img/ejercicio.png" width="20">
+			¿Hace Ejercicio?
+		</p>
+		<input type="radio" name="ejercicio" checked value="1">Sí<br/>
+		<input type="radio" name="ejercicio" value="2">No<br/>
+		<hr width="99%">
+		<p>
+			<img src="img/ejercicio.png" width="20">
+			¿Cada Cuánto Hace Ejercicio?
+		</p>
+		<input type="radio" name="ejercicio" checked value="1">Diariamente<br/>
+		<input type="radio" name="ejercicio" value="2">Más de dos veces por semana<br/>
+		<input type="radio" name="ejercicio" value="2">Semanalmente<br/>
+		<input type="radio" name="ejercicio" value="2">Mensualmente<br/>
+		<input type="radio" name="ejercicio" value="2">Cada tres meses<br/>
+		<hr width="99%">
+		<p>
+			<img src="img/ejercicio.png" width="20">
+			¿Qué Tipo de Ejercicios Realiza?
+		</p>
+		<input type="radio" name="ejercicio" value="2">Funcional<br/>
+		<input type="radio" name="ejercicio" value="2">Pesas<br/>
+		<input type="radio" name="ejercicio" value="2">Gimnasio común<br/>
+		<input type="radio" name="ejercicio" value="2">Cardio<br/>
+		<input type="radio" name="ejercicio" value="2">Otro<br/>
+		<hr width="99%">
+		<p>
+			<img src="img/ejercicio.png" width="20">
+			¿Cuánto Tiempo se Ejercita?
+		</p>
+		<input type="text" class="formulario" name="ejercicio" placeholder=" En minutos">
+	</div>
     <script  src="js/index.js"></script>
 </body>
 </html>

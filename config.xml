@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns   = "http://www.w3.org/ns/widgets"
+    xmlns:gap   = "http://phonegap.com/ns/1.0"
+    id          = "com.phonegap.example"
+    versionCode = "10"
+    version     = "1.0.0" >
+<!-- versionCode is optional and Android only -->
+  <name>Appteroma</name>
+  <icon src="img/icon.png" />
+  <description>
+      Aplicación móvil que permite estimar el riesgo de padecer aterosclerosis utilizando algoritmos de Machine Learning
+  </description>
+  <author href="" email="alepa12@hotmail.es">
+      María Alejandra Barajas Padrón
+  </author>
+</widget>
